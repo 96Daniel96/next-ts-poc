@@ -1,4 +1,4 @@
-import AnimatedDivfrom from "./AnimatedDiv";
+import AnimatedDiv from "./AnimatedDiv";
 import {
   Animations,
   AnimatedCss,
@@ -9,4 +9,4 @@ import {
 export { Animations, AnimatedDivAnimations };
 export type { AnimatedCss, AnimatedDivProps };
 
-export default AnimatedDivfrom;
+export default AnimatedDiv;
