@@ -1,0 +1,20 @@
+.dcontainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.dcontainer.column {
+  flex-direction: column;
+}
+
+.dcontainer.row {
+  flex-direction: row;
+}
+
+@for $i from 1 through 10 {
+  .dcontainer.flex-#{$i} {
+    flex: #{$i};
+  }
+}
