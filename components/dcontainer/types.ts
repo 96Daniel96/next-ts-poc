@@ -6,6 +6,7 @@ export type DContainerDirection = "column" | "row";
 export type DContainerConfig = {
   flex?: DContainerFlex;
   direction?: DContainerDirection;
+  backgroundImage?: string;
 };
 
 export type DContainerProps = {

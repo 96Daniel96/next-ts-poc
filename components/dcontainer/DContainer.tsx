@@ -1,4 +1,4 @@
-import React, { CSSProperties } from "react";
+import React, { CSSProperties, useMemo } from "react";
 import clsx from "clsx";
 
 import { DContainerProps } from ".";
@@ -9,7 +9,18 @@ const DContainer: React.FC<DContainerProps> = ({
   style,
   children,
 }) => {
-  const { flex = 1, direction = "column" } = config;
+  const { flex = 1, direction = "column", backgroundImage } = config;
+
+  const image = useMemo(() => {
+    if (backgroundImage) {
+      return (
+        <div className={styles["dcontainer__image"]}>
+          <img src={backgroundImage} />
+        </div>
+      );
+    }
+  }, [backgroundImage]);
+
   return (
     <div
       className={clsx(
@@ -19,6 +30,7 @@ const DContainer: React.FC<DContainerProps> = ({
       )}
       style={style}
     >
+      {image}
       {children}
     </div>
   );
