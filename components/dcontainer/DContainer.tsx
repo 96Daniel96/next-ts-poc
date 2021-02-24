@@ -5,7 +5,11 @@ import { DContainerProps } from ".";
 import styles from "./DContainer.module.scss";
 
 const DContainer: React.FC<DContainerProps> = ({
-  config = { flex: 1, direction: "column" },
+  config = {
+    flex: 1,
+    direction: "column",
+    align: { horizontal: "flex-start", vertical: "flex-start" },
+  },
   style,
   children,
 }) => {
@@ -13,7 +17,7 @@ const DContainer: React.FC<DContainerProps> = ({
     flex = 1,
     direction = "column",
     backgroundImage,
-    align: { horizontal, vertical },
+    align = { horizontal: "", vertical: "" },
   } = config;
 
   const image = useMemo(() => {
@@ -25,14 +29,15 @@ const DContainer: React.FC<DContainerProps> = ({
       );
     }
   }, [backgroundImage]);
-  console.log("styles[horizontal]", styles[`d-justify-${horizontal}`]);
+
   return (
     <div
       className={clsx(
         styles["dcontainer"],
         styles[`d-flex-${flex}`],
-        styles[direction],
-        styles[`d-justify-${horizontal}`]
+        styles[`d-direction-${direction}`],
+        styles[`d-justify-${align.horizontal}`],
+        styles[`d-align-${align.vertical}`]
       )}
       style={style}
     >

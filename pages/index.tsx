@@ -1,23 +1,33 @@
+import Head from "next/head";
 import React, { useState } from "react";
-import Image from "next/image";
-import AnimatedDiv, { AnimatedDivAnimations } from "../components/animated-div";
-import DBackgroundImage from "../components/dbackgroundimage";
+
 import DContainer from "../components/dcontainer";
+import AnimatedDiv, { AnimatedDivAnimations } from "../components/animated-div";
+import MainContainer from "./components/MainContainer";
+import styles from "./index.module.scss";
 
 const Home: React.FC<{}> = () => {
   return (
-    <div style={{ width: "100%", height: "100%" }}>
-      <DContainer
-        config={{ direction: "row", backgroundImage: "/background.jpg" }}
-      >
-        <DContainer>
-          <span>asd</span>
+    <>
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Josefin%20Sans"
+          rel="stylesheet"
+        />
+      </Head>
+      <div className={styles["home"]}>
+        <DContainer
+          config={{
+            direction: "row",
+            align: { horizontal: "center" },
+            backgroundImage: "/background.jpg",
+          }}
+          style={{ position: "static" }}
+        >
+          <MainContainer />
         </DContainer>
-        <DContainer config={{ backgroundImage: "/test.jpg" }}>
-          <span>asd</span>
-        </DContainer>
-      </DContainer>
-    </div>
+      </div>
+    </>
   );
 };
 

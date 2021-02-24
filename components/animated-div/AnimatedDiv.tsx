@@ -12,7 +12,6 @@ const AnimatedDiv: React.FC<AnimatedDivProps> = ({
   const [mainStyle, setMainStyle] = useState<CSSProperties>(
     Animations.get(animation).before
   );
-  const [hover, setHover] = useState<CSSProperties>();
 
   useEffect(() => {
     setIsMounted(true);
@@ -22,8 +21,7 @@ const AnimatedDiv: React.FC<AnimatedDivProps> = ({
   return (
     <div
       className={styles["animated-div"]}
-      style={{ ...mainStyle, ...hover }}
-      onMouseEnter={() => setHover({ height: "500px" })}
+      style={{ ...mainStyle }}
       onTransitionEnd={(event) => {
         if (event.propertyName === "opacity" && !mainStyle.opacity) {
           setIsMounted(!unmountOnDisappear);
