@@ -9,7 +9,12 @@ const DContainer: React.FC<DContainerProps> = ({
   style,
   children,
 }) => {
-  const { flex = 1, direction = "column", backgroundImage } = config;
+  const {
+    flex = 1,
+    direction = "column",
+    backgroundImage,
+    align: { horizontal, vertical },
+  } = config;
 
   const image = useMemo(() => {
     if (backgroundImage) {
@@ -20,13 +25,14 @@ const DContainer: React.FC<DContainerProps> = ({
       );
     }
   }, [backgroundImage]);
-
+  console.log("styles[horizontal]", styles[`d-justify-${horizontal}`]);
   return (
     <div
       className={clsx(
         styles["dcontainer"],
-        styles[`flex-${flex}`],
-        styles[direction]
+        styles[`d-flex-${flex}`],
+        styles[direction],
+        styles[`d-justify-${horizontal}`]
       )}
       style={style}
     >
