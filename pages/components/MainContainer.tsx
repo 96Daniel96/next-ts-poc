@@ -6,11 +6,12 @@ import DContainer from "../../components/dcontainer";
 
 const MainContainer: React.FC<{}> = () => {
   return (
-    <div
+    /* <div
+      className="container"
       style={{
-        height: "800px",
-        width: "50%",
+        width: "65%",
         backgroundColor: "rgba(0, 0, 0, 0.12)",
+        height: "800px",
       }}
     >
       <AnimatedDiv animation={AnimatedDivAnimations.APPEAR}>
@@ -21,51 +22,20 @@ const MainContainer: React.FC<{}> = () => {
             backgroundColor: "rgba(0, 0, 0, 0.25)",
           }}
         >
-          <DContainer config={{ flex: 1, direction: "row" }}>
-            {/* Profile Info */}
-            <DContainer config={{ flex: 3 }}>
-              <DContainer config={{ flex: 1 }}>
-                <span
-                  style={{
-                    fontFamily: "Josefin Sans, serif",
-                    fontSize: "46px",
-                  }}
-                >
-                  Daniel Basilio
-                </span>
-              </DContainer>
-              <DContainer config={{ flex: 1 }}>
-                <span
-                  style={{
-                    fontFamily: "Josefin Sans, serif",
-                    fontSize: "24px",
-                  }}
-                >
-                  Software Engineer / Frontend Developer
-                </span>
-              </DContainer>
-            </DContainer>
-            {/* Profile Image */}
-            <DContainer
-              config={{
-                flex: 2,
-                align: { horizontal: "center", vertical: "center" },
-              }}
-              style={{ backgroundColor: "rgba(0, 0, 0, 0.25)" }}
-            >
-              <div
-                style={{
-                  backgroundColor: "rgba(0, 0, 0, 0.25)",
-                  height: "100px",
-                  width: "100px",
-                }}
-              >
-                img
-              </div>
-            </DContainer>
-          </DContainer>
+          <div class="container">asd</div>
         </div>
       </AnimatedDiv>
+    </div> */
+    <div
+      className="example-container"
+      style={{
+        backgroundColor: "rgba(0, 0, 0, 0.12)",
+      }}
+    >
+      <div className="example-row">
+        <div className="example-content-main">Main content</div>
+        <div className="example-content-secondary">Secondary content</div>
+      </div>
     </div>
   );
 };
