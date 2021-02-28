@@ -1,5 +1,6 @@
-import React from "react";
-import { CSSProperties, useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
+import clsx from "clsx";
+
 import { Animations, AnimatedDivProps } from ".";
 import styles from "./AnimatedDiv.module.scss";
 
@@ -9,21 +10,26 @@ const AnimatedDiv: React.FC<AnimatedDivProps> = ({
   children,
 }) => {
   const [isMounted, setIsMounted] = useState(true);
-  const [mainStyle, setMainStyle] = useState<CSSProperties>(
+  const [animatedClass, setAnimatedClass] = useState<string>(
     Animations.get(animation).before
   );
 
   useEffect(() => {
     setIsMounted(true);
-    setMainStyle(Animations.get(animation).after);
+    setAnimatedClass(Animations.get(animation).after);
   }, [animation]);
 
   return (
     <div
-      className={styles["animated-div"]}
-      style={{ ...mainStyle }}
+      className={clsx(styles["animated-div"], styles[animatedClass])}
       onTransitionEnd={(event) => {
-        if (event.propertyName === "opacity" && !mainStyle.opacity) {
+        if (
+          event.propertyName === "opacity" &&
+          window
+            .getComputedStyle(event.currentTarget)
+            .getPropertyValue("opacity") === "0"
+        ) {
+          console.log("is mounted: ", !unmountOnDisappear);
           setIsMounted(!unmountOnDisappear);
         }
       }}

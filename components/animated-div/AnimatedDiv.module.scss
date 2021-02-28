@@ -1,3 +1,31 @@
 .animated-div {
   transition-duration: 1s;
 }
+
+.animated-div.opacity-before {
+  opacity: 0;
+}
+
+.animated-div.opacity-after {
+  opacity: 1;
+}
+
+.animated-div.appear-before {
+  opacity: 0;
+  margin-top: -100px;
+}
+
+.animated-div.appear-after {
+  opacity: 1;
+  margin-top: 0px;
+}
+
+.animated-div.disappear-before {
+  opacity: 1;
+  margin-top: 0px;
+}
+
+.animated-div.disappear-after {
+  opacity: 0;
+  margin-top: -100px;
+}

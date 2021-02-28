@@ -7,9 +7,9 @@ export type AnimatedDivProps = {
   children: any;
 };
 
-export type AnimatedCss = {
-  before: CSSProperties;
-  after: CSSProperties;
+export type AnimatedCssClass = {
+  before: string;
+  after: string;
 };
 
 export enum AnimatedDivAnimations {
@@ -18,23 +18,23 @@ export enum AnimatedDivAnimations {
   DISAPPEAR = "DISAPPEAR",
 }
 
-export const Animations = new Map<AnimatedDivAnimations, AnimatedCss>([
+export const Animations = new Map<AnimatedDivAnimations, AnimatedCssClass>([
   [
     AnimatedDivAnimations.OPACITY,
-    { before: { opacity: 0 }, after: { opacity: 1 } },
+    { before: "opacity-before", after: "opacity-after" },
   ],
   [
     AnimatedDivAnimations.APPEAR,
     {
-      before: { opacity: 0, marginTop: "-100px" },
-      after: { opacity: 1, marginTop: "0px" },
+      before: "appear-before",
+      after: "appear-after",
     },
   ],
   [
     AnimatedDivAnimations.DISAPPEAR,
     {
-      before: { opacity: 1, marginTop: "0px" },
-      after: { opacity: 0, marginTop: "-100px" },
+      before: "disappear-before",
+      after: "disappear-after",
     },
   ],
 ]);
