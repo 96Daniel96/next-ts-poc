@@ -11,13 +11,19 @@ import styles from './Container.module.scss';
 type ContainerPros = {
   className?: string;
   backgroundImage?: string;
+  fixed?: boolean;
 };
 
-const Container: React.FC<ContainerPros> = ({ className = 'container', backgroundImage, children }) => {
+const Container: React.FC<ContainerPros> = ({
+  className = 'container',
+  backgroundImage,
+  fixed,
+  children,
+}) => {
   const image = useMemo(() => {
     if (backgroundImage) {
       return (
-        <div className={styles['container_image']}>
+        <div className={clsx(styles['container_image'], { [styles['fixed']]: fixed })}>
           <img src={backgroundImage} />
         </div>
       );
@@ -25,7 +31,7 @@ const Container: React.FC<ContainerPros> = ({ className = 'container', backgroun
   }, [backgroundImage]);
 
   return (
-    <div /* style={{ height: '500px' }} */ className={clsx(styles['container'], className)}>
+    <div className={clsx(styles['container'], className)}>
       {image}
       {children}
     </div>
