@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
-import AnimatedDiv, { AnimatedDivAnimations } from '../../components/animated-div';
+import React from 'react';
+
+//Styles
 import styles from './MainContainer.module.scss';
 
 const MainContainer: React.FC<{}> = () => {
-  const t = data => {
-    const t2 = 2;
-  };
   return (
     <div
       className={styles['main-container']}
