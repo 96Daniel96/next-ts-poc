@@ -2,9 +2,9 @@ import { CSSProperties } from "react";
 
 export type AnimatedDivProps = {
   animation: AnimatedDivAnimations;
-  unmountOnDisappear?: boolean;
-  onHover?: CSSProperties;
   children: any;
+  className?: string;
+  unmountOnDisappear?: boolean;
 };
 
 export type AnimatedCssClass = {

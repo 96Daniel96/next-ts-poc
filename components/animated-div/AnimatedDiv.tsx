@@ -6,8 +6,9 @@ import styles from "./AnimatedDiv.module.scss";
 
 const AnimatedDiv: React.FC<AnimatedDivProps> = ({
   animation,
-  unmountOnDisappear = true,
   children,
+  className,
+  unmountOnDisappear = true,
 }) => {
   const [isMounted, setIsMounted] = useState(true);
   const [animatedClass, setAnimatedClass] = useState<string>(
@@ -21,7 +22,7 @@ const AnimatedDiv: React.FC<AnimatedDivProps> = ({
 
   return (
     <div
-      className={clsx(styles["animated-div"], styles[animatedClass])}
+      className={clsx(styles["animated-div"], styles[animatedClass], className)}
       onTransitionEnd={(event) => {
         if (
           event.propertyName === "opacity" &&
