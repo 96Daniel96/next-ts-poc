@@ -1,0 +1,18 @@
+.container {
+  position: relative;
+  min-height: 1rem;
+
+  &_image {
+    position: absolute;
+    z-index: -10;
+    height: inherit;
+    width: inherit;
+    right: 0;
+
+    & > img {
+      height: inherit;
+      width: inherit;
+      object-fit: cover;
+    }
+  }
+}
