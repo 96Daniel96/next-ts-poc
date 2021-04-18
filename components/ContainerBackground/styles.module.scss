@@ -1,0 +1,22 @@
+.container-relative {
+  position: relative;
+  overflow: overlay;
+}
+
+.image {
+  position: absolute;
+  z-index: -10;
+  height: inherit;
+  width: inherit;
+  left: 0;
+
+  & > img {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+  }
+
+  &.fixed {
+    position: fixed;
+  }
+}
