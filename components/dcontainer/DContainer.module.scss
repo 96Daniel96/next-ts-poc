@@ -1,0 +1,62 @@
+@import "variables";
+
+@mixin flex-properties(
+  $flexDirection: undefined,
+  $alignItems: undefined,
+  $justifyContent: undefined
+) {
+  @if $flexDirection != undefined {
+    flex-direction: $flexDirection;
+  }
+  @if $alignItems != undefined {
+    align-items: $alignItems;
+  }
+  @if $justifyContent != undefined {
+    justify-content: $justifyContent;
+  }
+}
+
+.dcontainer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  &__image {
+    position: absolute;
+    z-index: -10;
+    height: inherit;
+    width: inherit;
+
+    & > img {
+      height: inherit;
+      width: inherit;
+      object-fit: cover;
+    }
+  }
+}
+
+@each $i in $dcontainer-flex-values {
+  .dcontainer.d-flex-#{$i} {
+    flex: #{$i};
+  }
+}
+
+@each $i in $dcontainer-flex-direction {
+  .dcontainer.d-direction-#{$i} {
+    @include flex-properties($i);
+  }
+}
+
+@each $i in $dcontainer-flex-align-items {
+  .dcontainer.d-align-#{$i} {
+    @include flex-properties(undefined, $i);
+  }
+}
+
+@each $i in $dcontainer-flex-justify-content {
+  .dcontainer.d-justify-#{$i} {
+    @include flex-properties(undefined, undefined, $i);
+  }
+}
