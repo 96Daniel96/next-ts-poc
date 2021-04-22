@@ -1,7 +1,10 @@
 import React from 'react';
 
+import styles from './MainContainer.module.scss';
+
 //Components
 import Card from '../../components/Card';
+import DivRightImage from './DivRightImage';
 
 const MainContainer: React.FC<{}> = () => {
   return (
@@ -13,14 +16,20 @@ const MainContainer: React.FC<{}> = () => {
     >
       <Card maxWidth={'47rem'}>
         <div className="container">
-          <div className="row flex-column-reverse flex-sm-row pt-3 pb-3">
+          <DivRightImage />
+          {/* <div className="row flex-column-reverse flex-sm-row pt-3 pb-3">
             <div className="col-sm-6 d-flex justify-content-center">
-              <div className="d-flex flex-column justify-content-center"></div>
+              <div className="d-flex flex-column justify-content-center">
+                <p>asdas</p>
+                <p>asdas</p>
+                <p>asdas</p>
+                <p>asdas</p>
+              </div>
             </div>
-            <div className="col-sm-6 d-flex justify-content-center">
-              <img src={'/image-placeholder.png'} height={200} width={200} />
+            <div className="col-sm-6 d-flex justify-content-center position-relative">
+              <DivRightImage />
             </div>
-          </div>
+          </div> */}
         </div>
       </Card>
       <Card title="INTRODUCTION"></Card>

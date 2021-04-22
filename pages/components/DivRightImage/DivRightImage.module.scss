@@ -1,0 +1,29 @@
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+
+@include media-breakpoint-down(sm) {
+  .dynamic-image {
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -75px;
+
+    & > div {
+      position: relative;
+    }
+    & img {
+      border-radius: 50%;
+    }
+  }
+}
+
+.div-image {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  height: 100%;
+}
