@@ -5,7 +5,10 @@ const ColSmImage: React.FC<{}> = () => {
   return (
     <div className={clsx('col-sm-6', styles['dynamic-image'])}>
       <div className={styles['div-image']}>
-        <img src={'/image-placeholder.png'} style={{ height: '100%' }} />
+        <img
+          src={'/image-placeholder.png'}
+          style={{ height: 'inherit', width: 'inherit', objectFit: 'scale-down', objectPosition: 'right' }}
+        />
       </div>
     </div>
   );

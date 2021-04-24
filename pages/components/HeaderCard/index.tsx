@@ -5,37 +5,29 @@ import LinkedInIcon from '../../../assets/icons/linkedin';
 import TwitterIcon from '../../../assets/icons/twitter';
 import ColSmImage from './components/ColSmImage';
 import SocialButton from './components/SocialButton';
+import Text from '../../../components/Text';
 
 import styles from './HeaderCard.module.scss';
+import clsx from 'clsx';
 
 const HeaderCard: React.FC<{}> = () => {
   return (
     <Card maxWidth={'47rem'}>
       <div className="container">
-        <div
-          className={'row'}
-          style={{
-            height: '200px',
-            position: 'relative',
-            zIndex: 1,
-            background: 'rgb(81, 59, 44, 0.5)',
-            color: 'white',
-          }}
-        >
-          <div className="col-sm-6 d-flex flex-column">
-            <span>Daniel Basílio</span>
-            <span>Software Engineer / Web Developer</span>
-            <span>the.daniel.basilio@gmail.com</span>
-            <span>+351 964 180 302</span>
-
-            <div className="col d-flex flex-row">
-              <SocialButton className={styles['github-icon']}>
+        <div className={clsx('row', styles['header-row'])}>
+          <div className={clsx('col-sm-6 d-flex flex-column', styles[''])}>
+            <Text className={clsx(styles['name-span'])}>Daniel Basílio</Text>
+            <Text className={clsx(styles['role-span'])}>Software Engineer / Web Developer</Text>
+            <Text className={clsx(styles['info-span'])}> the.daniel.basilio@gmail.com</Text>
+            <Text className={clsx(styles['info-span'])}>+351 964 180 302</Text>
+            <div className={clsx('col d-flex flex-row', styles['icons-container'])}>
+              <SocialButton className={clsx(styles['icon'], styles['github-icon'])}>
                 <GithubIcon height="100%" width="100%" />
               </SocialButton>
-              <SocialButton className={styles['linkedin-icon']}>
+              <SocialButton className={clsx(styles['icon'], styles['linkedin-icon'])}>
                 <LinkedInIcon height="100%" width="100%" />
               </SocialButton>
-              <SocialButton className={styles['twitter-icon']}>
+              <SocialButton className={clsx(styles['icon'], styles['twitter-icon'])}>
                 <TwitterIcon height="100%" width="100%" />
               </SocialButton>
             </div>
