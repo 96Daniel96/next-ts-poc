@@ -23,7 +23,6 @@ const MainContainer: React.FC<{}> = () => {
               position: 'relative',
               zIndex: 1,
               background: '#06A763',
-              margin: -'33px 3px 0 0',
             }}
           >
             <div className="col-sm-6"></div>

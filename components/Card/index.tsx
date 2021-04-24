@@ -16,7 +16,7 @@ const Card: React.FC<CardProps> = ({ title, maxWidth, children }) => {
           </div>
         </div>
       )}
-      <div className={'row'}>{children}</div>
+      <div className={clsx('row', styles['col-children'])}>{children}</div>
     </div>
   );
 };
