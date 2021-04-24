@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 
 //Components
-import MainContainer from './components/MainContainer';
+import Main from './Main';
 import ContainerBackground from '../components/ContainerBackground';
 
 //Styles
@@ -16,7 +16,7 @@ const Home: React.FC<{}> = () => {
       </Head>
 
       <ContainerBackground backgroundImage="/background.jpg" className={styles['home']}>
-        <MainContainer />
+        <Main />
       </ContainerBackground>
     </>
   );
