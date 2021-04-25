@@ -9,17 +9,22 @@ import Text from '../../../components/Text';
 
 import styles from './HeaderCard.module.scss';
 import clsx from 'clsx';
+import data from 'data.json';
 
 const HeaderCard: React.FC<{}> = () => {
+  const {
+    basic: { name, role, email, phone },
+  } = data;
+
   return (
     <Card maxWidth={'47rem'}>
       <div className="container">
         <div className={clsx('row', styles['header-row'])}>
           <div className={clsx('col-sm-6 d-flex flex-column')}>
-            <Text className={clsx(styles['name-span'])}>Daniel Basílio</Text>
-            <Text className={clsx(styles['role-span'])}>Software Engineer / Web Developer</Text>
-            <Text className={clsx(styles['info-span'])}> the.daniel.basilio@gmail.com</Text>
-            <Text className={clsx(styles['info-span'])}>+351 964 180 302</Text>
+            <Text className={clsx(styles['name-span'])}>{name}</Text>
+            <Text className={clsx(styles['role-span'])}>{role}</Text>
+            <Text className={clsx(styles['info-span'])}>{email}</Text>
+            <Text className={clsx(styles['info-span'])}>{phone}</Text>
             <div className={clsx('col d-flex flex-row', styles['icons-container'])}>
               <SocialButton className={clsx(styles['icon'], styles['github-icon'])}>
                 <GithubIcon height="100%" width="100%" />
