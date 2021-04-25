@@ -15,7 +15,7 @@ const HeaderCard: React.FC<{}> = () => {
     <Card maxWidth={'47rem'}>
       <div className="container">
         <div className={clsx('row', styles['header-row'])}>
-          <div className={clsx('col-sm-6 d-flex flex-column', styles[''])}>
+          <div className={clsx('col-sm-6 d-flex flex-column')}>
             <Text className={clsx(styles['name-span'])}>Daniel Basílio</Text>
             <Text className={clsx(styles['role-span'])}>Software Engineer / Web Developer</Text>
             <Text className={clsx(styles['info-span'])}> the.daniel.basilio@gmail.com</Text>

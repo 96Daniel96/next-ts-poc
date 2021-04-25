@@ -20,14 +20,26 @@
 
   .name-span {
     font-size: 3rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: 2.5rem;
+    }
   }
 
   .role-span {
     font-size: 1.2rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: 1rem;
+    }
   }
 
   .info-span {
     font-size: 1rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: 1rem;
+    }
   }
 
   .icons-container {
