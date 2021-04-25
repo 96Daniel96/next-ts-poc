@@ -18,50 +18,54 @@
     }
   }
 
-  .name-span {
-    font-size: 3rem;
+  .header-content {
+    padding: 15px;
 
-    @include media-breakpoint-down(md) {
-      font-size: 2.5rem;
+    .name-span {
+      font-size: 3rem;
+
+      @include media-breakpoint-down(md) {
+        font-size: 2.5rem;
+      }
     }
-  }
 
-  .role-span {
-    font-size: 1.2rem;
+    .role-span {
+      font-size: 1.2rem;
 
-    @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(md) {
+        font-size: 1rem;
+      }
+    }
+
+    .info-span {
       font-size: 1rem;
-    }
-  }
 
-  .info-span {
-    font-size: 1rem;
-
-    @include media-breakpoint-down(md) {
-      font-size: 1rem;
-    }
-  }
-
-  .icons-container {
-    margin-top: 1rem;
-    @include media-breakpoint-down(sm) {
-      justify-content: center;
-      align-items: center;
+      @include media-breakpoint-down(md) {
+        font-size: 1rem;
+      }
     }
 
-    .icon {
-      margin-right: 20px;
-
-      &.twitter-icon {
-        background-color: #2196f3;
+    .icons-container {
+      margin-top: 1rem;
+      @include media-breakpoint-down(sm) {
+        justify-content: center;
+        align-items: center;
       }
 
-      &.linkedin-icon {
-        background-color: #1565c0;
-      }
+      .icon {
+        margin-right: 20px;
 
-      &.github-icon {
-        background-color: #24292e;
+        &.twitter-icon {
+          background-color: #2196f3;
+        }
+
+        &.linkedin-icon {
+          background-color: #1565c0;
+        }
+
+        &.github-icon {
+          background-color: #24292e;
+        }
       }
     }
   }
