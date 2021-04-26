@@ -3,6 +3,7 @@ import React from 'react';
 //Components
 import Card from '../../components/Card';
 import HeaderCard from '../components/HeaderCard';
+import IntroductionCard from 'pages/components/IntroductionCard';
 
 const Main: React.FC<{}> = () => {
   return (
@@ -13,7 +14,7 @@ const Main: React.FC<{}> = () => {
       }}
     >
       <HeaderCard />
-      <Card title="INTRODUCTION"></Card>
+      <IntroductionCard />
       <Card title="EDUCATION"></Card>
       <Card title="SKILLS"></Card>
       <Card title="PROFESSIONAL EXPERIENCE"></Card>
