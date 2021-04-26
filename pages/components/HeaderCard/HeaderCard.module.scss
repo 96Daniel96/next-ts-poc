@@ -1,0 +1,72 @@
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+
+.header-row {
+  position: relative;
+  z-index: 1;
+  background: rgba(81, 59, 44, 0.5);
+  color: white;
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 85px;
+
+    & span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .header-content {
+    padding: 15px;
+
+    .name-span {
+      font-size: 3rem;
+
+      @include media-breakpoint-down(md) {
+        font-size: 2.5rem;
+      }
+    }
+
+    .role-span {
+      font-size: 1.2rem;
+
+      @include media-breakpoint-down(md) {
+        font-size: 1rem;
+      }
+    }
+
+    .info-span {
+      font-size: 1rem;
+
+      @include media-breakpoint-down(md) {
+        font-size: 1rem;
+      }
+    }
+
+    .icons-container {
+      margin-top: 1rem;
+      @include media-breakpoint-down(sm) {
+        justify-content: center;
+        align-items: center;
+      }
+
+      .icon {
+        margin-right: 20px;
+
+        &.twitter-icon {
+          background-color: #2196f3;
+        }
+
+        &.linkedin-icon {
+          background-color: #1565c0;
+        }
+
+        &.github-icon {
+          background-color: #24292e;
+        }
+      }
+    }
+  }
+}
