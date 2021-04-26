@@ -1,15 +1,22 @@
 import React from 'react';
-import Card from '../../../components/Card';
-import GithubIcon from '../../../assets/icons/github';
-import LinkedInIcon from '../../../assets/icons/linkedin';
-import TwitterIcon from '../../../assets/icons/twitter';
+import clsx from 'clsx';
+
+//Components
+import Card from 'components/Card';
+import Text from 'components/Text';
 import ColSmImage from './components/ColSmImage';
 import SocialButton from './components/SocialButton';
-import Text from '../../../components/Text';
 
-import styles from './HeaderCard.module.scss';
-import clsx from 'clsx';
+//Config
 import data from 'data.json';
+
+//Icons
+import GithubIcon from 'assets/icons/github';
+import TwitterIcon from 'assets/icons/twitter';
+import LinkedInIcon from 'assets/icons/linkedin';
+
+//Styles
+import styles from './HeaderCard.module.scss';
 
 const HeaderCard: React.FC<{}> = () => {
   const {

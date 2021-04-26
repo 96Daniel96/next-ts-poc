@@ -1,4 +1,6 @@
 import clsx from 'clsx';
+
+//Styles
 import styles from './Text.module.scss';
 
 type TextProps = {

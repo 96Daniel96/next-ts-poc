@@ -1,10 +1,5 @@
 import React from 'react';
 
-import styles from './Main.module.scss';
-import GithubIcon from '../../assets/icons/github';
-import LinkedInIcon from '../../assets/icons/linkedin';
-import TwitterIcon from '../../assets/icons/twitter';
-
 //Components
 import Card from '../../components/Card';
 import HeaderCard from '../components/HeaderCard';

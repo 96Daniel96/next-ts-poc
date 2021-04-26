@@ -1,7 +1,8 @@
-import IconButton from '@material-ui/core/IconButton';
-import clsx from 'clsx';
 import React from 'react';
+import clsx from 'clsx';
+import IconButton from '@material-ui/core/IconButton';
 
+//Styles
 import styles from './SocialButton.module.scss';
 
 type SocialButtonProps = {

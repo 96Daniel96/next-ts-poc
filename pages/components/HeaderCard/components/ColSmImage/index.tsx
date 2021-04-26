@@ -1,4 +1,6 @@
 import clsx from 'clsx';
+
+//Styles
 import styles from './ColSmImage.module.scss';
 
 const ColSmImage: React.FC<{}> = () => {

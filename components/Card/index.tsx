@@ -1,4 +1,6 @@
 import clsx from 'clsx';
+
+//Styles
 import styles from './styles.module.scss';
 
 type CardProps = {
