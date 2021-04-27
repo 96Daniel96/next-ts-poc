@@ -5,5 +5,13 @@
     "email": "the.daniel.basilio@gmail.com",
     "phone": "+351 964 180 302"
   },
-  "introduction": ""
+  "introduction": "",
+  "education": [
+    {
+      "title": "",
+      "secondary": "",
+      "description": "",
+      "timeline": ""
+    }
+  ]
 }
