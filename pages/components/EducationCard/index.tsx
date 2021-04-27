@@ -1,9 +1,9 @@
 import React from 'react';
 import clsx from 'clsx';
-import Timeline from 'components/Timeline';
 
 //Components
 import Card from 'components/Card';
+import Timeline from 'components/Timeline';
 
 //Config
 import data from 'data.json';

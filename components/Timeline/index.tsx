@@ -36,8 +36,8 @@ const Timeline: React.FC<TimelineProps> = ({ items }) => {
 
   return (
     <MuiTimeline align="alternate">
-      {items.map(({ title, secondary, timeline, description, dot }) => (
-        <TimelineItem>
+      {items.map(({ title, secondary, timeline, description, dot }, index) => (
+        <TimelineItem key={index}>
           <TimelineSeparator>
             <TimelineDot>{dot}</TimelineDot>
             <TimelineConnector />
@@ -54,71 +54,6 @@ const Timeline: React.FC<TimelineProps> = ({ items }) => {
           </TimelineContent>
         </TimelineItem>
       ))}
-      {/* <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot>
-            <FastfoodIcon />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          <Paper elevation={3} className={classes.paper}>
-            <Box display="flex" flexDirection="column">
-              <span style={{ fontSize: '1.3rem' }}>Title</span>
-              <span style={{ fontSize: '1.1rem' }}>Secondary</span>
-              <span style={{ fontSize: '0.950rem' }}>Descrition</span>
-            </Box>
-          </Paper>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot color="primary">
-            <LaptopMacIcon />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              Code
-            </Typography>
-            <Typography>Because it&apos;s awesome!</Typography>
-          </Paper>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot color="primary" variant="outlined">
-            <HotelIcon />
-          </TimelineDot>
-          <TimelineConnector className={classes.secondaryTail} />
-        </TimelineSeparator>
-        <TimelineContent>
-          <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              Sleep
-            </Typography>
-            <Typography>Because you need rest</Typography>
-          </Paper>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot color="secondary">
-            <RepeatIcon />
-          </TimelineDot>
-        </TimelineSeparator>
-        <TimelineContent>
-          <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              Repeat
-            </Typography>
-            <Typography>Because this is the life you love!</Typography>
-          </Paper>
-        </TimelineContent>
-      </TimelineItem>
-     */}
     </MuiTimeline>
   );
 };
