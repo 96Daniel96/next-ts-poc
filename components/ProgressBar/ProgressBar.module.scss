@@ -1,0 +1,18 @@
+.progress-bar {
+  margin-top: 1.2rem;
+  transition-property: width, background-color;
+
+  .bar {
+    visibility: visible;
+    transform: scale(1);
+    opacity: 1;
+    transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s,
+      opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s;
+    height: 4px;
+    background-color: white;
+
+    &-background {
+      background-color: rgb(81, 59, 44);
+    }
+  }
+}
