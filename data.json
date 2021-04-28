@@ -13,5 +13,58 @@
       "description": "",
       "timeline": ""
     }
+  ],
+  "skills": [
+    {
+      "sectionTitle": "",
+      "elements": [
+        {
+          "name": "",
+          "progress": 0
+        },
+        {
+          "name": "",
+          "progress": 0
+        },
+        {
+          "name": "",
+          "progress": 0
+        }
+      ]
+    },
+    {
+      "sectionTitle": "",
+      "elements": [
+        {
+          "name": "",
+          "progress": 0
+        },
+        {
+          "name": "",
+          "progress": 0
+        },
+        {
+          "name": "",
+          "progress": 0
+        }
+      ]
+    },
+    {
+      "sectionTitle": "",
+      "elements": [
+        {
+          "name": "",
+          "progress": 0
+        },
+        {
+          "name": "",
+          "progress": 0
+        },
+        {
+          "name": "",
+          "progress": 0
+        }
+      ]
+    }
   ]
 }
