@@ -34,13 +34,28 @@ const HeaderCard: React.FC<{}> = () => {
               <Text className={clsx(styles['info-span'])}>{email}</Text>
               <Text className={clsx(styles['info-span'])}>{phone}</Text>
               <div className={clsx('col d-flex flex-row', styles['icons-container'])}>
-                <SocialButton className={clsx(styles['icon'], styles['github-icon'])}>
+                <SocialButton
+                  className={clsx(styles['icon'], styles['github-icon'])}
+                  onClick={() => {
+                    window.open('https://github.com/96Daniel96', '_blank');
+                  }}
+                >
                   <GithubIcon height="100%" width="100%" />
                 </SocialButton>
-                <SocialButton className={clsx(styles['icon'], styles['linkedin-icon'])}>
+                <SocialButton
+                  className={clsx(styles['icon'], styles['linkedin-icon'])}
+                  onClick={() => {
+                    window.open('https://www.linkedin.com/in/daniell-basillio', '_blank');
+                  }}
+                >
                   <LinkedInIcon height="100%" width="100%" />
                 </SocialButton>
-                <SocialButton className={clsx(styles['icon'], styles['twitter-icon'])}>
+                <SocialButton
+                  className={clsx(styles['icon'], styles['twitter-icon'])}
+                  onClick={() => {
+                    window.open('https://twitter.com/Daniel_Bsl', '_blank');
+                  }}
+                >
                   <TwitterIcon height="100%" width="100%" />
                 </SocialButton>
               </div>
