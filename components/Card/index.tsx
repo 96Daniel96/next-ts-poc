@@ -15,7 +15,7 @@ const Card: React.FC<CardProps> = ({ title, maxWidth, className, children }) => 
       {title && (
         <div className={'row'}>
           <div className={clsx('col', styles['col-title'])}>
-            <span>{title}</span>
+            <h1>{title}</h1>
           </div>
         </div>
       )}
