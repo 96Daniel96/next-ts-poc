@@ -1,11 +1,11 @@
 import React from 'react';
 
 //Components
-import Card from 'components/Card';
 import HeaderCard from 'pages/components/HeaderCard';
 import SkillsCard from 'pages/components/SkillsCard';
 import EducationCard from 'pages/components/EducationCard';
 import IntroductionCard from 'pages/components/IntroductionCard';
+import ProfessionalExperienceCard from 'pages/components/ProfessionalExperienceCard';
 
 const Main: React.FC<{}> = () => {
   return (
@@ -19,9 +19,7 @@ const Main: React.FC<{}> = () => {
       <IntroductionCard />
       <EducationCard />
       <SkillsCard />
-      <Card title="PROFESSIONAL EXPERIENCE"></Card>
-      <Card title="MORE/INTERESTS"></Card>
-      <Card title="CONTACT"></Card>
+      <ProfessionalExperienceCard />
     </div>
   );
 };
