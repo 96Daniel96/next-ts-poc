@@ -13,6 +13,8 @@ const Home: React.FC<{}> = () => {
     <>
       <Head>
         <link href="https://fonts.googleapis.com/css2?family=Josefin%20Sans" rel="stylesheet" />
+        <title>Daniel Basilio</title>
+        <meta name="description" content="Daniel Basilio, Software Engineer / Web Developer / Front end developer"></meta>
       </Head>
 
       <ContainerBackground backgroundImage="/background.jpg" className={styles['home']}>

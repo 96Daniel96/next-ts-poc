@@ -24,7 +24,7 @@ const Container: React.FC<ContainerPros> = ({
     if (backgroundImage) {
       return (
         <div className={clsx(styles['container_image'], { [styles['fixed']]: fixed })}>
-          <img src={backgroundImage} />
+          <img src={backgroundImage} alt='Container background image'/>
         </div>
       );
     }

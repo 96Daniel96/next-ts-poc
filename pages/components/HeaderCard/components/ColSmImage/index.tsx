@@ -10,6 +10,7 @@ const ColSmImage: React.FC<{}> = () => {
         <img
           src={'/image-placeholder.png'}
           style={{ height: 'inherit', width: 'inherit', objectFit: 'scale-down', objectPosition: 'right' }}
+          alt='Profile Image'
         />
       </div>
     </div>

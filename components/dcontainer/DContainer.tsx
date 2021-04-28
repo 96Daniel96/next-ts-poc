@@ -24,7 +24,7 @@ const DContainer: React.FC<DContainerProps> = ({
     if (backgroundImage) {
       return (
         <div className={styles["dcontainer__image"]}>
-          <img src={backgroundImage} />
+          <img src={backgroundImage} alt='DContainer background image' />
         </div>
       );
     }
