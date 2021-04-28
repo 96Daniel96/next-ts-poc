@@ -6,13 +6,16 @@ import IconButton from '@material-ui/core/IconButton';
 import styles from './SocialButton.module.scss';
 
 type SocialButtonProps = {
+  onClick: () => void;
   className?: string;
 };
 
-const SocialButton: React.FC<SocialButtonProps> = ({ className, children }) => {
+const SocialButton: React.FC<SocialButtonProps> = ({ onClick, className, children }) => {
   return (
     <div className={clsx(styles['social-button'], className)}>
-      <IconButton aria-label="delete">{children}</IconButton>
+      <IconButton aria-label="delete" onClick={onClick}>
+        {children}
+      </IconButton>
     </div>
   );
 };
