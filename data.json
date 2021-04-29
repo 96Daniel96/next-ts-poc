@@ -5,74 +5,125 @@
     "email": "the.daniel.basilio@gmail.com",
     "phone": "+351 964 180 302"
   },
-  "introduction": "",
+  "introduction": "Hello! I'm Daniel Basilío, I am graduated in Software Engineering with 3 years of experience and currently specializing in front end development. That's one of my biggest passions is tech world. I'm also very interested in other forms of the presentation layout such as mobile development, widgets, and all kinds of apps in general. My biggest dream is to create fluid, responsive and performing apps that every human can use, understand and enjoy!",
   "education": [
     {
-      "title": "",
+      "title": "High School",
       "secondary": "",
-      "description": "",
-      "timeline": ""
+      "description": "I completed High School in Science and Tecnology where I first started to think how much the tech companies changed the world we live in and how could I be part of that change. Completed the Math exams which gave me an opportunity to study at University",
+      "timeline": "Sep 2011 - Sep 2014"
+    },
+    {
+      "title": "Computer Science",
+      "secondary": "Polytechnic Institute of Setúbal",
+      "description": "I completed my degree in Computer Science in this prestigious institution where I was able to gather a lot of useful information and pratice that prepared me very well to real world scenarios.",
+      "timeline": "Sep 2014 - Jan 2018"
     }
   ],
   "skills": [
     {
-      "sectionTitle": "",
+      "sectionTitle": "Professional",
       "elements": [
         {
-          "name": "",
-          "progress": 0
+          "name": "HTML/CSS/JS/TS",
+          "progress": 90
         },
         {
-          "name": "",
-          "progress": 0
+          "name": "ReactJS",
+          "progress": 85
         },
         {
-          "name": "",
-          "progress": 0
+          "name": ".Net MVC",
+          "progress": 50
+        },
+        {
+          "name": "Microsoft PowerBI",
+          "progress": 50
+        },
+        {
+          "name": "Azure Cloud Services",
+          "progress": 25
         }
       ]
     },
     {
-      "sectionTitle": "",
+      "sectionTitle": "Personal",
       "elements": [
         {
-          "name": "",
-          "progress": 0
+          "name": "NextJS",
+          "progress": 70
         },
         {
-          "name": "",
-          "progress": 0
+          "name": "React Native",
+          "progress": 70
         },
         {
-          "name": "",
-          "progress": 0
+          "name": "Preact",
+          "progress": 50
+        },
+        {
+          "name": "Flutter (L)",
+          "progress": 10
+        },
+        {
+          "name": "Angular 9",
+          "progress": 10
         }
       ]
     },
     {
-      "sectionTitle": "",
+      "sectionTitle": "Software",
       "elements": [
         {
-          "name": "",
-          "progress": 0
+          "name": "VS Code",
+          "progress": 95
         },
         {
-          "name": "",
-          "progress": 0
+          "name": "GIMP",
+          "progress": 75
         },
         {
-          "name": "",
-          "progress": 0
+          "name": "Visual Studio",
+          "progress": 65
         }
       ]
     }
   ],
   "professionalExperience": [
     {
-      "title": "",
-      "secondary": "",
-      "description": "",
-      "timeline": ""
+      "title": "Full Stack Developer",
+      "secondary": "PrimeIT (Vehicle Financing Customer)",
+      "description": "My first professional job was for a well-known customer in Vehicle Financing industry and we developed the main application tool to manage their customer auto credits. It was a very ambitious project that envolved hundreads of people. It gave me not only the initial knowledge about working as a team but also my first real world scenario.",
+      "notes": "Tecnologies used: HTML, CSS, JavaScript, ASP.NET Web API, SQL Server 2014.",
+      "timeline": "Jan 2018 - Nov 2018"
+    },
+    {
+      "title": "Mobile Development",
+      "secondary": "InspireIT (Internal)",
+      "description": "I created an application POC using React Native and it was also a training in mobile development and animations.",
+      "notes": "Tecnologies used: React Native.",
+      "timeline": "Dec 2018 - Dec 2018"
+    },
+    {
+      "title": "UI Consultant / BI",
+      "secondary": "InspireIT (Food Service Industry)",
+      "description": "My first international project. Our customer was well-known in the catering industry in UK. We as team built a data analysis system to track all kind of information on their restaurants, pubs and bars, regarding sales, promotions, revenue, availability and amount of users per multiple brands and establishments.",
+      "notes": "Tecnologies used: Microsoft Power BI and Azure Cloud Services.",
+      "timeline": "Jan 2019 - Jan 2020"
+    },
+    {
+      "title": "Frontend Developer",
+      "secondary": "InspireIT (Energy Industry)",
+      "description": "I was responsable to lead and develop a frontend application for a customer in the Energy Industry. The system we developed was created to be used to manage filling stations across Portugal. We were a team of two and we managed all the conversations with the customer regarding their needs and requirements and engineered all the back and front end applications to fullfill their needs.",
+      "notes": "Tecnologies used: ReactJS.",
+      "timeline": "Jan 2020 - March 2021"
+    },
+    {
+      "title": "Frontend Developer",
+      "secondary": "InspireIT (Telecommunications)",
+      "description": "My current project. I'm developing a frontend application that will be used by our customers' customers to enable and disable multiple telecommunication services on people devices such as smartphones and smartwatchs all around the world. ",
+      "notes": "Tecnologies used: ReactJS.",
+      "timeline": "March 2021 - Now"
     }
   ]
 }
