@@ -18,6 +18,7 @@ const Home: React.FC<{}> = () => {
           name="description"
           content="Daniel Basilio, Software Engineer / Web Developer / Front end developer"
         ></meta>
+        <meta name="viewport" content="minimum-scale=1"></meta>
       </Head>
 
       <ContainerBackground backgroundImage="/background.jpg" className={styles['home']}>
