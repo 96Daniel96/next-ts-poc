@@ -24,6 +24,7 @@ type TimeLineItem = {
   secondary: string;
   timeline: string;
   description: string;
+  notes: string;
   dot?: JSX.Element;
 };
 
