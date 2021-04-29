@@ -8,9 +8,9 @@ const ColSmImage: React.FC<{}> = () => {
     <div className={clsx('col-sm-6', styles['dynamic-image'])}>
       <div className={styles['div-image']}>
         <img
-          src={'/image-placeholder.png'}
+          src={'/profile.jpg'}
           style={{ height: 'inherit', width: 'inherit', objectFit: 'scale-down', objectPosition: 'right' }}
-          alt='Profile Image'
+          alt="Profile Image"
         />
       </div>
     </div>
