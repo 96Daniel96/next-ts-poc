@@ -36,7 +36,7 @@ const Timeline: React.FC<TimelineProps> = ({ items }) => {
 
   return (
     <MuiTimeline align="alternate">
-      {items.map(({ title, secondary, timeline, description, dot }, index) => (
+      {items.map(({ title, secondary, timeline, description, notes, dot }, index) => (
         <TimelineItem key={index}>
           <TimelineSeparator>
             <TimelineDot>{dot}</TimelineDot>
@@ -44,12 +44,15 @@ const Timeline: React.FC<TimelineProps> = ({ items }) => {
           </TimelineSeparator>
           <TimelineContent>
             <Paper elevation={3} className={classes.paper}>
-              <Box display="flex" flexDirection="column">
+              <div className="d-flex flex-column">
                 <span style={{ fontSize: '1.3rem' }}>{title}</span>
-                <span style={{ fontSize: '1.1rem' }}>{secondary}</span>
-                <span style={{ fontSize: '1.1rem' }}>{timeline}</span>
-                <span style={{ fontSize: '0.950rem' }}>{description}</span>
-              </Box>
+                {<span style={{ fontSize: '1.0rem' }}>{secondary}</span>}
+                <span style={{ fontSize: '0.950rem', color: 'rgb(81, 59, 44)', marginBottom: '10px' }}>
+                  {timeline}
+                </span>
+                <span style={{ fontSize: '0.950rem', textAlign: 'justify' }}>{description}</span>
+                <span style={{ fontSize: '0.950rem', textAlign: 'justify' }}>{notes}</span>
+              </div>
             </Paper>
           </TimelineContent>
         </TimelineItem>
